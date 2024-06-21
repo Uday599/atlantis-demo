@@ -29,12 +29,12 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "atlantis-bucket-e
   
 }
 
-resource "aws_instance" "web" {
-  # ami           = data.aws_ami.ubuntu.id
-  ami = "ami-0e001c9271cf7f3b9"
-  instance_type = "t2.micro"
+# resource "aws_instance" "web" {
+#   # ami           = data.aws_ami.ubuntu.id
+#   ami = "ami-0e001c9271cf7f3b9"
+#   instance_type = "t2.micro"
 
-  tags = {
-    Name = "terraform-atlantis"
-  }
-}
+#   tags = {
+#     Name = "terraform-atlantis"
+#   }
+# }
